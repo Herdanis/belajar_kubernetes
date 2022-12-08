@@ -1,7 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-pod
+  name: nginx-annotation
+  labels:
+    name: nginx
+  annotations:
+    description: Ini Adalah Annotation
 spec:
   containers:
     - name: nginx
